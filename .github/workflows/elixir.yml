@@ -22,7 +22,7 @@ jobs:
       run: cd /
     - name: Install Dependencies
       run: |
-        cd ~ 
+        cd ~/fizzbuzz 
         echo `pwd`
         mix deps.get
     - name: Run Tests
