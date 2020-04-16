@@ -20,6 +20,7 @@ jobs:
         otp-version: 22.2 # Define the OTP version [required]
     - name: Change directory to root
       run: |
+        pwd
         cd /
         echo `ls`
     - name: Install Dependencies
