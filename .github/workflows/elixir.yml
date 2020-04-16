@@ -18,15 +18,9 @@ jobs:
       with:
         elixir-version: 1.9.4 # Define the elixir version [required]
         otp-version: 22.2 # Define the OTP version [required]
-    - name: Change directory to root
-      run: |
-        pwd
-        cd /
-        echo `ls`
     - name: Install Dependencies
       run: |
-        cd ~/
-        echo `ls`
+        cd ..
         mix deps.get
     - name: Run Tests
       run: mix test
