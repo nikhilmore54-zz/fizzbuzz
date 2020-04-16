@@ -21,6 +21,9 @@ jobs:
     - name: Change directory to root
       run: cd /
     - name: Install Dependencies
-      run: cd ~ && mix deps.get
+      run: |
+        cd ~ 
+        echo `pwd`
+        mix deps.get
     - name: Run Tests
       run: mix test
